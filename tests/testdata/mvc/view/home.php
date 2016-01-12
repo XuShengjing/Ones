@@ -1,0 +1,2 @@
+viewtest<?php echo $id ?>
+

@@ -1,5 +1,5 @@
 {
-    "name": "XuShengjing/ones",
+    "name": "bloodsnow/ones",
     "description": "php framework",
     "keywords": ["framework", "php"],
     "type": "framework",
@@ -9,5 +9,11 @@
             "name": "XuShengjing",
             "email": "1984xsj@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+    	"phpunit/phpunit": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {"Ones\\": ""}
+    },
 }
