@@ -1,0 +1,13 @@
+{
+    "name": "XuShengjing/ones",
+    "description": "php framework",
+    "keywords": ["framework", "php"],
+    "type": "framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "XuShengjing",
+            "email": "1984xsj@gmail.com"
+        }
+    ]
+}
