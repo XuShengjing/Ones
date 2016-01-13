@@ -18,10 +18,11 @@ class OnesApp{
 	
 	static $instance = null;
 	
-	public static getInstance(){
+	public static function getInstance(){
 		if(self::$instance  == null){
 			self::$instance = new OnesApp();
 		}
+		return self::$instance;
 	}
 	
 	function setRouter(InterfaceRouter $router){
@@ -32,7 +33,7 @@ class OnesApp{
 		$this->view_loader = $view_loader;
 	}
 	
-	function runInWebServer($baseDir){
+	function run($baseDir){
 		if(!$this->router){
 			$controller_dir = $baseDir."/controller";
 			$this->router = new ControllerRouter($controller_dir);
